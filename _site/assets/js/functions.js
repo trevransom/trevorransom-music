@@ -6,7 +6,7 @@ Barba.Dispatcher.on('newPageReady', function() {
         var url = location.href.split('/'),
             loc = url[url.length -1],
             link = document.querySelectorAll(elem);
-        if (loc.length == 0 && url[url.length -2] != 'localhost:3000') {
+        if (loc.length == 0 && url[url.length -2] != 'trevorransom.com') {
             console.log('hey')
             loc = url[url.length -2]
         }
