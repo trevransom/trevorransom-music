@@ -1,0 +1,57 @@
+section.music-section
+	.flex
+		margin-bottom: 90px
+
+	.flex.section-left-tag
+		margin-bottom: inherit
+		justify-content: start
+
+		h3
+			border-bottom: 1px solid black
+
+	.col-1
+		margin: 0 30px
+		position: relative
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+
+	.col-1.media-content
+		height: 400px
+		max-width: 400px
+
+		img 
+			width: 100%
+
+		iframe
+			height: 360px
+
+		.cta-2-row
+			display: flex
+			// flex-direction: row
+
+			a
+				margin: 10px 4px 0
+				padding: 8px 0
+
+@media (max-width: 875px)
+	section.music-section
+		.flex
+			.col-1, .col-1.media-content
+				height: auto
+				// width: inherit
+				// max-width: inherit
+				max-width: 60%
+				min-width: 250px
+				width: 100%
+
+				iframe
+					width: 100%
+
+			.col-1.media-content:first-child
+				margin-bottom: 10px
+
+	p,
+	span
+		font-size: 20px

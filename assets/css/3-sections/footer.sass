@@ -1,0 +1,68 @@
+footer
+	display: flex
+	flex-direction: row
+	align-items: baseline
+	padding: 15px
+	justify-content: space-between
+
+	.spotify-cta
+		// margin: 10px 0 20px
+		float: right
+		iframe
+			margin-left: 20px
+			width: 210px
+			margin-right: 20px
+			// height: 27px !important
+
+	ul
+		font-size: 20px
+		margin: 5px 0
+		padding-left: 20px
+
+		li
+			list-style: none
+			float: left
+			margin-right: 10px
+			
+			img
+				vertical-align: middle
+				width: 20px
+				height: 20px
+				text-align: center
+				-webkit-font-smoothing: antialiased
+
+		li:after
+			height: 3px
+			width: 3px
+			background-color: red
+			-webkit-border-radius: 50%
+			border-radius: 50%
+			display: inline-block
+			margin-left: 10px
+			content: ""
+
+		li:last-child:after
+			display: none
+
+		li.spotify-cta
+
+
+
+@media (max-width: 875px)
+	footer
+		// display: flex
+		flex-direction: column
+		// align-items: baseline
+		ul 
+			// padding-left: 40px
+			margin-bottom: 15px
+			li
+				img
+					// width: 19px
+					// height: 19px
+
+	p,
+	span
+		font-size: 20px
+
+	

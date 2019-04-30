@@ -1,0 +1,67 @@
+.home-wrap
+	display: flex
+	min-height: 100vh
+	// background-image: url("/assets/img/profile_shot_2.jpg")
+
+.home-sections
+	flex: 1
+	margin-top: 150px
+
+	section
+		padding: 30px 0
+
+	.flex
+		margin: 0 30px
+		display: flex
+		flex-direction: rows
+		justify-content: center
+
+	.flex--space-around
+	    justify-content: space-around
+
+	.order-first
+		order: -1
+
+.col-1
+	// max-width: 325px
+	// margin: 0 12px
+
+.col-2
+	max-width: 690px
+	margin: 0 30px
+
+h2
+	margin: 0 0 50px 0
+	font-family: Roboto, sans-serif
+	font-weight: 600
+	line-height: 2
+	color: #008CBA
+	text-transform: uppercase
+	letter-spacing: 0.5px
+
+h3
+	font-weight: 500
+
+h4
+	margin-top: 0
+	font-weight: 500
+
+@media (max-width: 875px)
+	.home-sections .flex
+		// display: block
+		flex-direction: column
+		align-items: center
+
+	.col-1
+		max-width: 100%
+
+	.col-2
+		max-width: 100%
+
+	.flex
+		h2
+			font-size: 30px
+			margin: 0 0 10px 0
+
+		h4
+			font-size: 16px

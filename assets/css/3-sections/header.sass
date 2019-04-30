@@ -1,0 +1,213 @@
+.home-wrap header
+    display: flex
+    flex-direction: column
+    z-index: 99
+    text-rendering: optimizelegibility
+
+    .header-position
+        position: fixed
+        display: flex
+        justify-content: space-between
+        align-items: center
+        top: 0
+        left: 0
+        right: 0
+        padding: 0 30px
+        background-color: rgba(255, 255, 255, 0.95)
+
+        .logo
+            display: inline-flex
+            font-size: 35px
+            padding: 5px 0
+            // text-transform: uppercase
+            z-index: 9
+            // width: 100px
+            font-weight: 400
+            // font-family: $logo-font
+            font-family: Futura
+            // margin-left: 30px
+            transition: all 0.3s ease-in-out
+
+        nav
+            display: inline-flex
+            flex-shrink: 0
+            ul
+                list-style: none
+                // position: absolute
+                right: 30px
+                top: 45px
+                margin: 0
+                padding: 0
+                // float: left
+
+                li
+                    font-size: 18px
+                    display: inline
+                    // text-transform: uppercase
+
+                    .active
+                        color: black
+
+                    a
+                        margin: 10px
+                        transition: .3s all ease
+                        color: #008CBA
+                        background-position: 0 135%
+                        background-size: 100% 20%
+                        background-repeat: no-repeat
+
+                        &:hover
+                            background-size: 100% 38%
+                            background-image: linear-gradient(120deg, #008CBA 0%, #8fd3f4 100%)
+                            // color: black
+
+        .email-link
+            position: absolute
+            top: 10px
+            right: 30px
+            font-size: 12px
+
+        .mobile-nav-toggle
+            display: none
+            width: 35px
+            height: 40px
+            align-items: center
+            position: absolute
+            right: 30px
+            // top: 25px
+            cursor: pointer
+
+            span,
+            span:before,
+            span:after
+                content: ""
+                transition: all .3s ease-in-out
+                display: block
+                height: 2px
+                background: #333
+                width: 100%
+                position: relative
+
+            span:before
+                top: 10px
+
+            span:after
+                bottom: 12px
+
+            &:hover span
+                transform-origin: center
+                transform: scaleX(.9)
+
+            &:hover span:before
+                transform-origin: center
+                transform: scaleX(1.2)
+
+            &:hover span:after
+                transform-origin: center
+                transform: scaleX(1.2)
+
+            &:hover span,
+            &:hover span:before,
+            &:hover span:after
+                background: #197BBD
+     
+@media (max-width: 925px) and (min-width: 875px)
+    .home-wrap header 
+        .header-position
+
+            nav
+                // display: inline-flex
+                // flex-shrink: 0
+                ul
+                    // list-style: none
+                    // // position: absolute
+                    // right: 30px
+                    // top: 45px
+                    // margin: 0
+                    // padding: 0
+                    // // float: left
+
+                    li
+                        font-size: 20px
+
+            .email-link
+                // position: absolute
+                // top: 10px
+                // right: 30px
+                font-size: 10px
+
+@media (max-width: 875px)
+    .home-wrap header
+        width: auto
+
+        .header-position
+            // width: auto
+            // position: relative
+            // top: auto
+            // bottom: auto
+            // left: auto
+            // flex-direction: row
+            // align-items: center
+
+            .logo
+                font-size: 28px
+
+            .email-link
+                display: none
+
+            .mobile-nav-toggle
+                display: flex
+
+            .mobile-nav-toggle.active
+
+                span
+                    background: transparent
+
+                span:before,
+                span:after
+                    transform-origin: center
+                    transform: rotate(45deg)
+                    top: 0
+
+                &:-moz-selection
+                    background: transparent
+
+                &:selection
+                    background: transparent
+
+                &:-moz-selection
+                    background: transparent
+
+                span:before
+                    transform: rotate(-45deg)
+
+                &:hover span
+                    transform-origin: center
+                    transform: scaleX(1)
+                    background: transparent
+
+            nav
+                justify-content: flex-end
+                right: 30px
+                top: 60px
+                position: absolute
+                width: 120px
+                transform: translateX(150%)
+                background: rgba(255, 255, 255, 0.95)
+
+                ul
+                    padding-bottom: 10px
+
+                    li
+                        a
+                            display: block
+
+                            &:hover
+                                background: none
+
+
+        nav.is-open
+            transition: all 0.3s ease-in-out
+            // position
+            display: flex
+            transform: translateX(-2%)

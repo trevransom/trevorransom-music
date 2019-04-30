@@ -1,0 +1,61 @@
+section.header-video::after
+	content: ""
+	// background-image: url("../img/mountain_idea.png")
+	background-size: contain
+	background-repeat: no-repeat
+	background-position: left
+	opacity: 1
+	z-index: -1
+	// transform: scale(.4)
+	position: absolute
+	width: 30%
+	height: 100%
+	top: 40%
+	left: 0
+
+section.header-video
+
+	// background: red
+	p,
+	span
+		font-size: 19px
+
+	
+
+	// .relative
+	// 	position: relative
+	// 	display: flex
+	// 	justify-content: center
+
+	.video-strip
+		width: 100%
+		max-width: 900px
+
+		.html5-video-player a
+			display: none
+
+	.col-1
+		margin: 0 30px
+		position: relative
+		height: auto
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+
+		.min-width
+			min-width: 325px
+
+
+@media (max-width: 875px)
+	section.header-video
+		.video-strip
+			// width: inherit
+
+		.col-1
+			.min-width
+				min-width: auto
+
+	p,
+	span
+		font-size: 20px
