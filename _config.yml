@@ -2,4 +2,3 @@ name: Trevor Ransom
 markdown: redcarpet
 exclude: ["node_modules", "gulpfile.js", "package.json", "README.md"]
 permalink: /:title/
-base_url: "trevorransom-music"
