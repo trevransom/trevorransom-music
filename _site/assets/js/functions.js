@@ -6,7 +6,7 @@ Barba.Dispatcher.on('newPageReady', function() {
         var url = location.href.split('/'),
             loc = url[url.length -1],
             link = document.querySelectorAll(elem);
-            console.log(link)
+            // console.log(link)
         if (loc.length == 0 && url[url.length -2] != 'trevorransom.com') {
             // console.log('hey')
             loc = url[url.length -2]
@@ -15,7 +15,7 @@ Barba.Dispatcher.on('newPageReady', function() {
         for (var i = 0; i < link.length; i++) {
             var path = link[i].href.split('/'),
                 page = path[path.length -2];
-                console.log(page);
+                // console.log(page);
                 // console.log(loc)
             if (page == loc || page == home && loc == '') {
                 link[i].className += ' ' + active;
