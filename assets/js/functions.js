@@ -6,15 +6,18 @@ Barba.Dispatcher.on('newPageReady', function() {
         var url = location.href.split('/'),
             loc = url[url.length -1],
             link = document.querySelectorAll(elem);
+            console.log(link)
         if (loc.length == 0 && url[url.length -2] != 'trevorransom.com') {
-            console.log('hey')
+            // console.log('hey')
             loc = url[url.length -2]
         }
         
         for (var i = 0; i < link.length; i++) {
             var path = link[i].href.split('/'),
-                page = path[path.length -1];
-            if (page == loc || page == loc + '/' || page == home && loc == '') {
+                page = path[path.length -2];
+                console.log(page);
+                // console.log(loc)
+            if (page == loc || page == home && loc == '') {
                 link[i].className += ' ' + active;
                 document.body.className += ' ' + page.substr(0, page.lastIndexOf('.'));
                 }
