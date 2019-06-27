@@ -15,8 +15,8 @@ Barba.Dispatcher.on('newPageReady', function() {
         for (var i = 0; i < link.length; i++) {
             var path = link[i].href.split('/'),
                 page = path[path.length -2];
-                console.log(page);
-                console.log(loc)
+                console.log(page + ' - page');
+                console.log(loc + ' - loc')
             if (page == loc || page == home && loc == '') {
                 link[i].className += ' ' + active;
                 document.body.className += ' ' + page.substr(0, page.lastIndexOf('.'));
