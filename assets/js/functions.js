@@ -23,7 +23,7 @@ Barba.Dispatcher.on('newPageReady', function() {
                 }
             }
         }
-    navHighlight('nav li a', '', 'active');
+    navHighlight('nav li a', '/', 'active');
     
     $('.mobile-nav-toggle').removeClass("active");
     $('nav').removeClass('is-open');
