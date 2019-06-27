@@ -19,7 +19,7 @@ Barba.Dispatcher.on('newPageReady', function() {
                 console.log(loc + ' - loc')
             if (page == loc || page == home && loc == '') {
                 link[i].className += ' ' + active;
-                document.body.className += ' ' + page.substr(0, page.lastIndexOf('.'));
+                // document.body.className += ' ' + page.substr(0, page.lastIndexOf('.'));
                 }
             }
         }
