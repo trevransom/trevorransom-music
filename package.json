@@ -9,7 +9,7 @@
   "author": "Shane Osbourne",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.7",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "6.0.0",
     "gulp-jade": "^1.1.0",
@@ -30,6 +30,6 @@
   },
   "homepage": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync",
   "dependencies": {
-    "node-vibrant": "^3.1.1"
+    "node-vibrant": "^3.1.3"
   }
 }
