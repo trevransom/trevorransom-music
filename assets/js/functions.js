@@ -15,15 +15,15 @@ Barba.Dispatcher.on('newPageReady', function() {
         for (var i = 0; i < link.length; i++) {
             var path = link[i].href.split('/'),
                 page = path[path.length -2];
-                // console.log(page);
-                // console.log(loc)
+                console.log(page);
+                console.log(loc)
             if (page == loc || page == home && loc == '') {
                 link[i].className += ' ' + active;
                 document.body.className += ' ' + page.substr(0, page.lastIndexOf('.'));
                 }
             }
         }
-    navHighlight('nav li a', '/', 'active');
+    navHighlight('nav li a', '', 'active');
     
     $('.mobile-nav-toggle').removeClass("active");
     $('nav').removeClass('is-open');
